@@ -1,5 +1,8 @@
 package com.company;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Challenges {
 
     public static void main(String[] args) {
@@ -21,6 +24,17 @@ public class Challenges {
         String regExp2 = "I want a (bike|ball).";
         System.out.println(challenge1.matches(regExp2));
         System.out.println(challenge2.matches(regExp2));
+
+        // Challenge 3: In the last challenge (challenge 2) we used the same regular expression twice. Use the
+        // Matcher.matches() method to check for matches, instead of String.matches(), for the regular expression
+        // that uses \w+ . Hint: You'll have to compile the pattern.
+
+        Pattern pattern = Pattern.compile(regExp);
+        Matcher matcher = pattern.matcher(challenge1);
+        System.out.println(matcher.matches());
+
+        matcher = pattern.matcher(challenge2);
+        System.out.println(matcher.matches());
 
 
     }
