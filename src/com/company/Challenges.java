@@ -129,6 +129,12 @@ public class Challenges {
         String challenge13 = "11111-1111";
         System.out.println(challenge13.matches("^\\d{5}-\\d{4}$"));
 
+        // Challenge 14: Write a regular expression that will match 5-digit US zip codes,
+        // and zip codes that contain the optional 4 digits preceded by a dash.
+
+        System.out.println(challenge12.matches("^\\d{5}(-\\d{4})?$"));
+        System.out.println(challenge13.matches("^\\d{5}(-\\d{4})?$"));
+
 
     }
 }
