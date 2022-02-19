@@ -108,5 +108,14 @@ public class Challenges {
             System.out.println("Occurence: " + matcher11.group(1));
         }
 
+        System.out.println("\nChallenge 11a: Extract only the numbers:");
+
+        String challenge11a = "{0, 2}, {0, 5}, {1, 3}, {2, 4}, {x, y}, {6, 34}, {11, 12}";
+        Pattern pattern11a = Pattern.compile("\\{(\\d+, \\d+)\\}");
+        Matcher matcher11a = pattern11a.matcher(challenge11a);
+        while(matcher11a.find()){
+            System.out.println("Occurence: " + matcher11a.group(1));
+        }
+
     }
 }
