@@ -89,6 +89,14 @@ public class Challenges {
             System.out.println("Occurence: " + matcher9.group(1));
         }
 
+        // Challenge 10: for each occurence of pattern in given string
+        // print the start and end index of occuring number
+        String challenge10 = "abcd.135\tuvqz.7\ttzik.999\n";
+        Pattern pattern10 = Pattern.compile("[A-Za-z]+\\.(\\d+)\\s");
+        Matcher matcher10 = pattern9.matcher(challenge10);
+        while(matcher10.find()){
+            System.out.println("Occurence: start = " + matcher10.start(1) + " end = " + (matcher10.end(1) - 1));
+        }
 
 
 
