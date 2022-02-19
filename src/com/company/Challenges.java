@@ -50,6 +50,11 @@ public class Challenges {
         System.out.println(challenge5.matches("[abcdefg]+"));
         System.out.println(challenge5.matches("[a-g]+"));
 
+        // Challenge 6: Write a regular expression that will only match the challenge5 string in its entirety.
+
+        System.out.println(challenge5.matches("^a{3}bc{8}d{3}ef{3}g$"));
+        System.out.println(challenge5.replaceAll("^a{3}bc{8}d{3}ef{3}g$", "REPLACED"));
+
 
 
     }
