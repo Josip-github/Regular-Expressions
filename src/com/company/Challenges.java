@@ -123,5 +123,12 @@ public class Challenges {
         String challenge12 = "11111";
         System.out.println(challenge12.matches("^\\d{5}$"));
 
+        // Challenge 13: US zip codes can be followed by a dash adn another four numbers.
+        // Write a regular expression that will match those zip codes. use "11111-1111" as your test string
+
+        String challenge13 = "11111-1111";
+        System.out.println(challenge13.matches("^\\d{5}-\\d{4}$"));
+
+
     }
 }
