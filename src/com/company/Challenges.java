@@ -43,6 +43,14 @@ public class Challenges {
         System.out.println(challenge4.replaceAll(" ", "_"));
         System.out.println(challenge4.replaceAll("\\s", "_"));
 
+        // Challenge 5: Write a regular expression that will match the following string in its entirety.
+        // Use the String.matches() method to verify your answer.
+
+        String challenge5 = "aaabccccccccdddefffg";
+        System.out.println(challenge5.matches("[abcdefg]+"));
+        System.out.println(challenge5.matches("[a-g]+"));
+
+
 
     }
 }
