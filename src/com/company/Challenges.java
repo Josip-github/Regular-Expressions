@@ -76,6 +76,19 @@ public class Challenges {
             // group 1 is digits
         }
 
+        System.out.println("\nChallenge 9:");
+        // Challenge 9: Let's suppose we're reading strings that match the patterns we used in
+        // challenges 7 and 8 from a file. Tabs are used to separate the matches, with one exception.
+        // The last match is followed by a new line. Our revised challenge 8 string would look like this:
+        String challenge9 = "abcd.135\tuvqz.7\ttzik.999\n";
+        // Revise the regular expression accordingly and extract all the numbers, as we did in challenge 8.
+
+        Pattern pattern9 = Pattern.compile("[A-Za-z]+\\.(\\d+)\\s");
+        Matcher matcher9 = pattern9.matcher(challenge9);
+        while(matcher9.find()){
+            System.out.println("Occurence: " + matcher9.group(1));
+        }
+
 
 
 
