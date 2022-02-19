@@ -36,6 +36,13 @@ public class Challenges {
         matcher = pattern.matcher(challenge2);
         System.out.println(matcher.matches());
 
+        // Challenge 4: Replace all occurrences of blank with an underscore for the following string.
+        // Print out the resulting string:
+
+        String challenge4 = "Replace all blanks with underscores.";
+        System.out.println(challenge4.replaceAll(" ", "_"));
+        System.out.println(challenge4.replaceAll("\\s", "_"));
+
 
     }
 }
