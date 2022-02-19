@@ -62,6 +62,20 @@ public class Challenges {
         String challenge7 = "abcd.135";
         System.out.println(challenge7.matches("^[A-z][a-z]+\\.\\d+$"));
 
+        // Challenge 8: Modify the regular expression in challenge 7 to use a group, so that we can print
+        // all the digits that occur in a string that contains multiple occurences of the pattern.
+        // Write all the code required to accomplish this (create a pattern and matcher, etc.).
+        // Use the following string to test your code:
+
+        String challenge8 = "abcd.135uvqz.7tzik.999";
+        Pattern pattern8 = Pattern.compile("[A-Za-z]+\\.(\\d+)");
+        Matcher matcher8 = pattern8.matcher(challenge8);
+        while (matcher8.find()){
+            System.out.println("Occurence: " + matcher8.group(1));
+            // group 0 is entire string, in this case for example: abcd.135 or uvqz.7
+            // group 1 is digits
+        }
+
 
 
 
